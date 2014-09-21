@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/*共通のタグ-------*/
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 100%;
+  line-height: 1.5em;
+  background-color: #eee;
+  color: #444;
+}
+
+input {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  cursor: pointer;
+  margin: 0;
+}
+
+a {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  color: #0070c0;
+}
+
+a:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+a:visited,
+a:active {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+/*ページ共通の構成要素-------*/
+.containner {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.containner .header {
+  height: 20px;
+  padding: 15px;
+  background-color: #88af6e;
+}
+
+.containner .header > .title {
+  margin: 0 auto;
+  width: 960px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.containner > .main {
+  margin: 0 auto;
+  padding: 15px 15px 30px;
+  max-width: 960px;
+}
+
+.containner .footer {
+  padding: 20px;
+  background-color: #eee;
+}
+
+.containner .footer > .copyright {
+  margin: 0 auto;
+  max-width: 960px;
+  font-size: 0.8em;
+}
+
+.containner .page-top-btn {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+}
+
+.containner .page-top-btn a {
+  display: block;
+  color: #222;
+  padding: 10px 15px;
+  font-size: 0.8em;
+  background-color: #bbb;
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+}
+
+/**/
+
+.main-visual {
+  background: #222;
+  color: #fff;
+}
+
+.main-visual .logo {
+  width: 100%;
+  max-width: 610px;
+}
+
+.main-visual-body {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 960px;
+  text-align: center;
+}
+
+a.next-dojo {
+  display: block;
+  margin: 10px auto 0;
+  max-width: 610px;
+  color: #fff;
+  text-align: left;
+  background: #555;
+  line-height: 1.8em;
+  padding: 15px;
+}
+a.next-dojo .next-dojo-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/**/
+
+.section .section-title {
+  font-size: 2em;
+  line-height: 1.2em;
+  padding: 1.5em 0 1em;
+}
+
+.section.child .section-title {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  padding: 1em 0 0.5em;
+}
+
+.section.child-child .section-title {
+  font-size: 1.3em;
+  line-height: 1.2em;
+  padding: 1em 0 0.5em;
+}
+
+.section ul {
+  padding-left: 1.5em;
+}
+
+/*共通に使用するclass-------*/
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.assistive-text {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.minimam {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  font-size: 0.7em;
+}
